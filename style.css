@@ -20,12 +20,90 @@
 }
 
 body {
+  background: rgba(32, 32, 32, 1);
+
   font-family: "Manrope", sans-serif;
   letter-spacing: -0.5px;
+
+  margin: 0;
 }
 
 p {
   font-weight: 600;
   color: rgba(149, 149, 149, 1);
   line-height: 1, 5;
+}
+
+a {
+  color: rgba(222, 222, 222, 1);
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1248px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* ----------------------- HEADER ----------------------- */
+
+.header {
+  padding: 20px 0;
+
+  backdrop-filter: blur(20px);
+  background: rgba(50, 50, 50, 0.7);
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header a {
+}
+.logo {
+  font-size: 20px;
+  font-weight: 800;
+
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+  transition: transform 0.5s;
+}
+.logo__img {
+}
+.header__nav {
+}
+
+.header__nav ul {
+  display: flex;
+  gap: 60px;
+}
+
+.header__link {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.header li {
+  transition: transform 0.5s;
+}
+
+.header a:hover,
+.header li:hover {
+  transform: scale(1.1);
+}
+
+.header a:active,
+.header li:active {
+  transform: scale(1);
+  opacity: 0.8;
 }
