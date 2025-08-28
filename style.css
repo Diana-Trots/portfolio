@@ -45,10 +45,56 @@ ul {
   margin: 0;
 }
 
+h1,
+h2.h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
 .container {
   max-width: 1248px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.btn {
+  padding: 16px 48px;
+
+  border-radius: 4px;
+  background: rgba(157, 157, 157, 1);
+
+  color: rgba(255, 255, 255, 1);
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0px;
+
+  transition: background-color 0.7s, transform 0.5s;
+}
+
+.btn:hover {
+  background: rgb(108, 108, 108);
+}
+
+.btn:active {
+  background: rgb(66, 66, 66);
+  transform: translateY(1px);
+}
+.btn--mailto {
+  display: inline-flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.btn--mailto::before {
+  content: "";
+  background-image: url("images/mail.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 21px;
+  height: 21px;
 }
 
 /* ----------------------- HEADER ----------------------- */
@@ -106,4 +152,50 @@ ul {
 .header li:active {
   transform: scale(1);
   opacity: 0.8;
+}
+
+/* ----------------------- MAIN ----------------------- */
+
+/* ----------------------- WELCOME ----------------------- */
+
+.welcome {
+  padding-top: 160px;
+}
+.container {
+}
+.welcome__container {
+  display: flex;
+  justify-content: space-between;
+}
+.welcome__desc {
+}
+.welcome__title {
+  max-width: 500px;
+
+  margin-bottom: 24px;
+
+  color: rgba(222, 222, 222, 1);
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.welcome__desc {
+  max-width: 395px;
+
+  margin-bottom: 88px;
+
+  font-size: 20px;
+}
+
+.welcome__btn {
+}
+.welcome__img {
+  width: 400px;
+  height: 400px;
+
+  margin-right: 50px;
+  border-radius: 50%;
+
+  object-fit: cover;
+  object-position: center;
 }
