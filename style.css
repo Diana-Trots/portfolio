@@ -31,7 +31,8 @@ body {
 p {
   font-weight: 600;
   color: rgba(149, 149, 149, 1);
-  line-height: 1, 5;
+  line-height: 1.5;
+  margin: 0;
 }
 
 a {
@@ -103,6 +104,16 @@ h6 {
   background-repeat: no-repeat;
   width: 21px;
   height: 21px;
+}
+
+.title {
+  color: rgba(222, 222, 222, 1);
+  font-size: 36px;
+  font-weight: 700;
+
+  margin-bottom: 65px;
+
+  text-align: center;
 }
 
 /* ----------------------- HEADER ----------------------- */
@@ -294,4 +305,86 @@ h6 {
 
 .work:nth-child(odd) {
   margin-top: -140px;
+}
+
+/* ----------------------- PROJECTS ----------------------- */
+
+.projects {
+  margin-top: 240px;
+}
+
+.projects__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.projects__img {
+  width: 400px;
+  height: 408px;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+.project--vertical .projects__img {
+  width: 400px;
+  height: 560px;
+}
+
+/* ----------------------- CONTACT ----------------------- */
+
+.contact {
+  margin-top: 240px;
+  margin-bottom: 120px;
+}
+.contact__container {
+  max-width: 521px;
+  text-align: center;
+}
+.contact .title {
+  margin-bottom: 24px;
+}
+.contact__text {
+  font-size: 26px;
+
+  text-align: center;
+  margin-bottom: 48px;
+}
+.contact__btn {
+  display: inline-flex;
+  text-align: center;
+}
+
+/* ----------------------- FOOTER ----------------------- */
+
+.footer {
+  padding: 50px 0;
+
+  border-top: 1px solid rgba(105, 105, 105, 1);
+}
+
+.container {
+}
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+}
+.copy {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+span {
+  color: #fff;
+}
+
+.socials {
+}
+.socials ul {
+  display: flex;
+  gap: 43px;
+}
+.socials__link {
 }
